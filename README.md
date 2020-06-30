@@ -1,5 +1,5 @@
 # Structural Design Patterns
-Trabalho semestral em Linguagem de Programação II
+Projeto semestral em Linguagem de Programação II
 
 ## Uso dos padrões de projetos em uma plataforma PetShop
 
