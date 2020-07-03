@@ -4,17 +4,28 @@ import java.util.ArrayList;
 
 public class Cliente {
 	
-	//Responsável pelo pet
 	private String nome;
 	private String cpf;
 	private String endereco;
 	
-	// O cliente pode possuir vários animais e vários tipos de notificações
 	private ArrayList<Animal> animais = new ArrayList<Animal>();
-	private ArrayList<Notificacao> notificacao = new ArrayList<Notificacao>();
+	private ArrayList<Notificacao> notificacoes = new ArrayList<Notificacao>();
 	
-	// O cliente também pode fazer vários agendamentos
-	private ArrayList<Agenda> agendamentos = new ArrayList<Agenda>();
+	// Constructor
+	public Cliente(String nome, String cpf, String endereco) {
+		this.nome = nome;
+		this.cpf = cpf;
+		this.endereco = endereco;
+	}
+	
+	// animal Builder
+	public void animais(Animal animal) {
+		animais.add(animal);
+	}
+	
+	public void notificacoes(Notificacao notificacao) {
+		notificacoes.add(notificacao);
+	}
 	
 	public String getNome() {
 		return nome;
@@ -41,16 +52,19 @@ public class Cliente {
 		this.animais = animais;
 	}
 	public ArrayList<Notificacao> getNotificacao() {
-		return notificacao;
+		return notificacoes;
 	}
-	public void setNotificacao(ArrayList<Notificacao> notificacao) {
-		this.notificacao = notificacao;
+	public void setNotificacao(ArrayList<Notificacao> notificacoes) {
+		this.notificacoes = notificacoes;
 	}
-	public ArrayList<Agenda> getAgendamentos() {
-		return agendamentos;
-	}
-	public void setAgendamentos(ArrayList<Agenda> agendamentos) {
-		this.agendamentos = agendamentos;
+	
+	
+	public void imprimeAnimais() {
+		
+		for(Animal a : animais) {
+			System.out.println(a.getNome());
+		}
+		
 	}
 
 }

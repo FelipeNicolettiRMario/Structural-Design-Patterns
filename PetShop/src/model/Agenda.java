@@ -1,33 +1,49 @@
 package model;
 
-import java.util.ArrayList;
-
 public class Agenda {
 	
-	// O agendamento é diário, e possui uma lista de servicos cadastrados para cada dia
-	// Caso o dia(data) agendado não tenha as horas suficientes para o tempo do serviço deverá ser feito um encaixe
-	// AQUI UTILIZAREMOS ADAPTER
-	private String data;
-	private Double horas;
-	private ArrayList<Servico> servicos = new ArrayList<Servico>();
+	private Double ano;
+	private Double mes;
+	private Double dias;
+	private Double horasFuncionamentoPorDia; 
 	
-	public String getData() {
-		return data;
+	public Agenda(Double ano, Double mes, Double dias, Double horasFuncionamentoPorDia) {
+		this.setAno(ano);
+		this.setMes(mes);
+		this.setDias(dias);
+		this.setHorasFuncionamentoPorDia(horasFuncionamentoPorDia);
 	}
-	public void setData(String data) {
-		this.data = data;
-	}
-	public Double getHoras() {
-		return horas;
-	}
-	public void setHoras(Double horas) {
-		this.horas = horas;
-	}
-	public ArrayList<Servico> getServicos() {
-		return servicos;
-	}
-	public void setServicos(ArrayList<Servico> servicos) {
-		this.servicos = servicos;
+	
+	public Double getHorasFuncionamentoPorDia() {
+		return horasFuncionamentoPorDia;
 	}
 
+	public void setHorasFuncionamentoPorDia(Double horasFuncionamentoPorDia) {
+		this.horasFuncionamentoPorDia = horasFuncionamentoPorDia;
+	}
+
+	public Double getDias() {
+		return dias;
+	}
+
+	public void setDias(Double dias) {
+		this.dias = dias;
+	}
+
+	public Double getMes() {
+		return mes;
+	}
+
+	public void setMes(Double mes) {
+		this.mes = mes;
+	}
+
+	public Double getAno() {
+		return ano;
+	}
+
+	public void setAno(Double ano) {
+		this.ano = ano;
+	}
+    
 }
