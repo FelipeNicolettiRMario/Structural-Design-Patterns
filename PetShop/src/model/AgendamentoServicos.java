@@ -8,7 +8,7 @@ public class AgendamentoServicos {
 	private int dia;
 	private String mes;
 	private Cliente cliente;
-	private List<Servico> servicos = new ArrayList<Servico>();
+	private List<TipoServico> servicos = new ArrayList<TipoServico>();
 	
 	
 
@@ -28,7 +28,7 @@ public class AgendamentoServicos {
 		return this;
 	}
 	
-	public AgendamentoServicos servico(Servico servico) {
+	public AgendamentoServicos servico(TipoServico servico) {
 		servicos.add(servico);
 		return this;
 	}
@@ -44,11 +44,11 @@ public class AgendamentoServicos {
 		this.cliente = cliente;
 	}
 
-	public List<Servico> getServicos() {
+	public List<TipoServico> getServicos() {
 		return servicos;
 	}
 
-	public void setServicos(List<Servico> servicos) {
+	public void setServicos(List<TipoServico> servicos) {
 		this.servicos = servicos;
 	}
 

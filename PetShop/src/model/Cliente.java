@@ -9,7 +9,6 @@ public class Cliente {
 	private String endereco;
 	
 	private ArrayList<Animal> animais = new ArrayList<Animal>();
-	private ArrayList<Notificacao> notificacoes = new ArrayList<Notificacao>();
 	
 	// Constructor
 	public Cliente(String nome, String cpf, String endereco) {
@@ -23,9 +22,6 @@ public class Cliente {
 		animais.add(animal);
 	}
 	
-	public void notificacoes(Notificacao notificacao) {
-		notificacoes.add(notificacao);
-	}
 	
 	public String getNome() {
 		return nome;
@@ -51,13 +47,6 @@ public class Cliente {
 	public void setAnimais(ArrayList<Animal> animais) {
 		this.animais = animais;
 	}
-	public ArrayList<Notificacao> getNotificacao() {
-		return notificacoes;
-	}
-	public void setNotificacao(ArrayList<Notificacao> notificacoes) {
-		this.notificacoes = notificacoes;
-	}
-	
 	
 	public void imprimeAnimais() {
 		

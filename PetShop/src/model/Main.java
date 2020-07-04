@@ -4,7 +4,11 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Notificacao notificacao = new Notificacao("Whatssap");
+		TipoServico tipoServicos = new TiposServicoDecorator();
+		tipoServicos = new Tosa(tipoServicos);
+		tipoServicos = new Hidratacao(tipoServicos);
+		tipoServicos = new Banho(tipoServicos);
+		
 		
 		Animal animalBuilder = new Animal();
 		animalBuilder.especie("Calopsita");
@@ -15,9 +19,14 @@ public class Main {
 		
 		Cliente cliente = new Cliente("Bruna", "100.100.100.10", "Rua teste, n01");
 		cliente.animais(animalBuilder);
-		cliente.notificacoes(notificacao);
+		//cliente.notificacoes(notificacao);
 		
-		Servico servico = new Servico("Banho", 50.00, 1, 1.00, cliente);
+		TipoServico servico = new TiposServicoDecorator();
+		servico.setQuantidade(1);
+		servico = new Banho(servico);
+		servico = new Tosa(servico);
+		servico = new Hidratacao(servico);
+		
 		
 		AgendamentoServicos builder = new AgendamentoServicos();
 		builder.dia(01);
@@ -29,7 +38,9 @@ public class Main {
 				"Data do serviço: " + builder.getDia() + " de " + builder.getMes() + 
 				";\nCliente:" + builder.getCliente().getNome() + 
 				";\nPet: " + animalBuilder.getNome() +
-				";\nServiço: " + servico.getTipo()
+				";\nServiço: " + servico.getNome() +
+				";\nPreço: " + servico.getPreco() +
+				";\nTempo: " + servico.getTempo() 
 		);
 		
 
