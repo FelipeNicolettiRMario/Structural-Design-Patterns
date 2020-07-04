@@ -42,8 +42,6 @@ public class Main {
 				";\nPreço: " + servico.getPreco() +
 				";\nTempo: " + servico.getTempo() 
 		);
-		
-
 	}
 
 }

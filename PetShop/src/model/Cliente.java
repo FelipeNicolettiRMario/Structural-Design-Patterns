@@ -48,12 +48,5 @@ public class Cliente {
 		this.animais = animais;
 	}
 	
-	public void imprimeAnimais() {
-		
-		for(Animal a : animais) {
-			System.out.println(a.getNome());
-		}
-		
-	}
 
 }

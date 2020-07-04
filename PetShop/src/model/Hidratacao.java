@@ -14,6 +14,5 @@ public class Hidratacao extends TipoServicoValor{
 		return 30 * getQuantidade() + this.getTipoServico().getPreco() ;
 	}
 
-	
 
 }

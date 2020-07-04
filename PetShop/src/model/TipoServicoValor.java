@@ -17,6 +17,4 @@ public abstract class TipoServicoValor extends TipoServico{
 		this.tipoServico = tipoServico;
 	}
 	
-	
-
 }

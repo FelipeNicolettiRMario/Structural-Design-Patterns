@@ -9,7 +9,6 @@ public class Banho extends TipoServicoValor{
 		this.setTempo(30.0);
 	}
 	
-	
 	@Override
 	public Double getPreco() {
 		// Acrescenta o valor de 50 a referencia do tipo de serviço armazenada na super classe

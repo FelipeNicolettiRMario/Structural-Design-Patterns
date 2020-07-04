@@ -10,7 +10,6 @@ public class AgendamentoServicos {
 	private Cliente cliente;
 	private List<TipoServico> servicos = new ArrayList<TipoServico>();
 	
-	
 
 	// Builder methods
 	public AgendamentoServicos dia(int dia) {

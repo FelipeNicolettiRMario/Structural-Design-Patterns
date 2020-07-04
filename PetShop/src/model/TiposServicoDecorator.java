@@ -12,7 +12,4 @@ public class TiposServicoDecorator extends TipoServico{
 		return 5.00;
 	}
 
-	
-
-
 }

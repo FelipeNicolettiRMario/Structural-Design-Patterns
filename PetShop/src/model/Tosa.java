@@ -14,5 +14,4 @@ public class Tosa extends TipoServicoValor{
 		return 40 * getQuantidade() + this.getTipoServico().getPreco() ;
 	}
 	 
-	
 }

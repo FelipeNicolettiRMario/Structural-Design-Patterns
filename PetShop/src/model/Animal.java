@@ -8,7 +8,6 @@ public class Animal {
 	private String cor;
 	private String genero;
 	
-	
 	// Builder methods
 	public void nome(String nome) {
 		this.nome = nome;

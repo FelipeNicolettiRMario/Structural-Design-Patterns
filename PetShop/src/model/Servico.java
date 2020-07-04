@@ -4,7 +4,6 @@ public class Servico {
 	
 	private String tipo;
 	private Double valor;
-	
 	private TipoServico tipoServico;
 	
 	public Servico(String tipo, Double valor, int quantidade, Double tempo, Cliente cliente, TipoServico tipoServico) {
@@ -34,5 +33,4 @@ public class Servico {
 		this.tipoServico = tipoServico;
 	}
 	
-
 }
