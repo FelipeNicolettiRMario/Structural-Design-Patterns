@@ -1,5 +1,9 @@
 package model;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+
 public class Animal {
 	
 	private String nome;

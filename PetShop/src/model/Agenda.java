@@ -1,17 +1,27 @@
 package model;
 
+import java.util.Calendar;
+import java.util.List;
+
 public class Agenda {
 	
-	private Double ano;
-	private Double mes;
-	private Double dias;
+	private int ano;
+	private int mes;
+	private List dias;
 	private Double horasFuncionamentoPorDia; 
 	
-	public Agenda(Double ano, Double mes, Double dias, Double horasFuncionamentoPorDia) {
-		this.setAno(ano);
-		this.setMes(mes);
-		this.setDias(dias);
-		this.setHorasFuncionamentoPorDia(horasFuncionamentoPorDia);
+	public Agenda(int ano, int mes, Double horasFuncionamentoPorDia) {
+		this.ano = ano;
+		this.mes = mes;
+		this.horasFuncionamentoPorDia = horasFuncionamentoPorDia;
+	}
+	
+	public List getDias() {
+		return dias;
+	}
+
+	public void setDias(List dias) {
+		this.dias = dias;
 	}
 	
 	public Double getHorasFuncionamentoPorDia() {
@@ -22,27 +32,19 @@ public class Agenda {
 		this.horasFuncionamentoPorDia = horasFuncionamentoPorDia;
 	}
 
-	public Double getDias() {
-		return dias;
-	}
-
-	public void setDias(Double dias) {
-		this.dias = dias;
-	}
-
-	public Double getMes() {
+	public int getMes() {
 		return mes;
 	}
 
-	public void setMes(Double mes) {
+	public void setMes(int mes) {
 		this.mes = mes;
 	}
 
-	public Double getAno() {
+	public int getAno() {
 		return ano;
 	}
 
-	public void setAno(Double ano) {
+	public void setAno(int ano) {
 		this.ano = ano;
 	}
 	
