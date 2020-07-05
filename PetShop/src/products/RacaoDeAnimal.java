@@ -7,9 +7,10 @@ public abstract class RacaoDeAnimal {
 		this.marca = marca;
 	}
 	
+	/* metodos do modelo*/
+	
 	public abstract void ingredientes();
 	
 	public abstract void mostrarRacao();
-	
 	
 }

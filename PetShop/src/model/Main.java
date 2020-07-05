@@ -50,7 +50,7 @@ public class Main {
 		);
 		
 		/* Bridge use */
-		
+		System.out.println("---------------");
 		RacaoDeAnimal racao1 = new RacaoDeCachorro(new Pedigree());
 		racao1.mostrarRacao();
 		
