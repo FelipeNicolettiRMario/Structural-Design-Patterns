@@ -1,6 +1,9 @@
 package model;
 
 import java.util.ArrayList;
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 
 public class Cliente {
 	
