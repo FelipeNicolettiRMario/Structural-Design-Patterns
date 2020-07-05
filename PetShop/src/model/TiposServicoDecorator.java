@@ -1,6 +1,9 @@
 package model;
 
+import java.util.ArrayList;
+
 public class TiposServicoDecorator extends TipoServico{
+	
 
 	public TiposServicoDecorator() {
 		this.setNome("Vários serviços");
@@ -11,5 +14,17 @@ public class TiposServicoDecorator extends TipoServico{
 		// Comissão para funcionários
 		return 5.00;
 	}
+	
+	@Override
+	public Double getTemp() {
+		// Comissão para funcionários
+		return 0.0;
+	}
 
+	@Override
+	public String getName() {
+		return "";
+	}
+	
+	
 }

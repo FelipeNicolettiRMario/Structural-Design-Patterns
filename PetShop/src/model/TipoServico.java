@@ -1,12 +1,18 @@
 package model;
 
+import java.util.ArrayList;
+
 public abstract class TipoServico {
 	
 	private String nome;
 	private int quantidade;
 	private Double tempo;
 	
+	
 	public abstract Double getPreco();
+	public abstract String getName();
+	public abstract Double getTemp();
+	
 	
 	public int getQuantidade() {
 		return quantidade;
@@ -34,5 +40,8 @@ public abstract class TipoServico {
 		// TODO Auto-generated method stub
 		return tempo;
 	}
+	
+
+	
 
 }

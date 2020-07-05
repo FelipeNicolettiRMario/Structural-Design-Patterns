@@ -4,7 +4,7 @@ public class Banho extends TipoServicoValor{
 
 	public Banho(TipoServico tipoServico) {
 		super(tipoServico);
-		//this.setNome("Banho");
+		this.setNome("Banho");
 		this.setQuantidade(2);
 		this.setTempo(30.0);
 	}
@@ -14,6 +14,19 @@ public class Banho extends TipoServicoValor{
 		// Acrescenta o valor de 50 a referencia do tipo de serviço armazenada na super classe
 		return 50 * getQuantidade() + this.getTipoServico().getPreco() ;
 	}
+
+	@Override
+	public String getName() {
+		return getNome() + this.getTipoServico().getName();
+	}
+
+	@Override
+	public Double getTemp() {
+		// TODO Auto-generated method stub
+		return getTempo() +  this.getTipoServico().getTemp() ;
+	}
+	
+	
 	
 	
 }

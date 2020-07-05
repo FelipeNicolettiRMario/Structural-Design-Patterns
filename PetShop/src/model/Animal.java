@@ -3,18 +3,22 @@ package model;
 public class Animal {
 	
 	private String nome;
-	private String especie;
+	private EspecieAnimal especie;
+	private String raca;
 	private String porte;
 	private String cor;
 	private String genero;
+	private String nomeCliente;
+	
+	
 	
 	// Builder methods
 	public void nome(String nome) {
 		this.nome = nome;
 	}
 	
-	public void especie(String especie) {
-		this.especie = especie;
+	public void especie(EspecieAnimal especieAnimal) {
+		this.especie = especieAnimal;
 	}
 	
 	public void porte(String porte) {
@@ -28,6 +32,10 @@ public class Animal {
 	public void genero(String genero) {
 		this.genero = genero;
 	}
+	
+	public void raca(String raca) {
+		this.setRaca(raca);
+	}
 
 	
 	// Getters and Setters
@@ -37,10 +45,10 @@ public class Animal {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getEspecie() {
+	public EspecieAnimal getEspecie() {
 		return especie;
 	}
-	public void setEspecie(String especie) {
+	public void setEspecie(EspecieAnimal especie) {
 		this.especie = especie;
 	}
 	public String getPorte() {
@@ -60,6 +68,23 @@ public class Animal {
 	}
 	public void setGenero(String genero) {
 		this.genero = genero;
+	}
+
+	public String getNomeCliente() {
+		return nomeCliente;
+	}
+
+	public void setNomeCliente(String nomeCliente) {
+		this.nomeCliente = nomeCliente;
+	}
+
+
+	public String getRaca() {
+		return raca;
+	}
+
+	public void setRaca(String raca) {
+		this.raca = raca;
 	}
 
 }

@@ -7,6 +7,7 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	private String endereco;
+	private int telefone;
 	
 	private ArrayList<Animal> animais = new ArrayList<Animal>();
 	
@@ -17,12 +18,33 @@ public class Cliente {
 		this.endereco = endereco;
 	}
 	
-	// animal Builder
-	public void animais(Animal animal) {
-		animais.add(animal);
+	
+	// Methods
+	public void adicionarAnimal(Animal animal) {
+	    animais.add(animal);
+	}
+
+	public void removerAnimal(String nomeAnimal) {
+		for(Animal animal : animais) {
+			if (animal.getNome().equals(nomeAnimal)) {
+				animais.remove(animal);
+			}
+		}
 	}
 	
+	public void listarAnimaisPorCliente() {
+		for(Animal animal : animais) {
+			System.out.println("Nome: " + animal.getNome() 
+								+ "Espécie: " + animal.getEspecie() 
+								+ "Porte: " + animal.getPorte()
+								+ "Cor: " + animal.getCor()
+								+ "Gênero: " + animal.getGenero()
+			);
+		}
+	}
+
 	
+	// Getters and Setters
 	public String getNome() {
 		return nome;
 	}
@@ -46,6 +68,14 @@ public class Cliente {
 	}
 	public void setAnimais(ArrayList<Animal> animais) {
 		this.animais = animais;
+	}
+
+	public int getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(int telefone) {
+		this.telefone = telefone;
 	}
 	
 

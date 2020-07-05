@@ -33,6 +33,17 @@ public class AgendamentoServicos {
 	}
 	
 	
+	public void listarServicosPorCliente(TipoServico servico) {
+		for(TipoServico servico1 : servicos) {
+			System.out.println("Nome: " + servico1.getNome() 
+								+ "Quantidade: " + servico1.getQuantidade()
+								+ "Tempo: " + servico1.getTempo()
+			);
+		}
+	}
+	
+	
+	
 	// Getters and Setters
 	
 	public Cliente getCliente() {
