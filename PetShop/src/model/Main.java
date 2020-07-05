@@ -1,5 +1,11 @@
 package model;
 
+import products.Golden;
+import products.Pedigree;
+import products.RacaoDeAnimal;
+import products.RacaoDeCachorro;
+import products.RacaoDeGato;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -42,6 +48,15 @@ public class Main {
 				";\nPreço: " + servico.getPreco() +
 				";\nTempo: " + servico.getTempo() 
 		);
+		
+		/* Bridge use */
+		
+		RacaoDeAnimal racao1 = new RacaoDeCachorro(new Pedigree());
+		racao1.mostrarRacao();
+		
+		RacaoDeAnimal racao2 = new RacaoDeGato(new Golden());
+		racao2.mostrarRacao();
+		
 	}
 
 }
