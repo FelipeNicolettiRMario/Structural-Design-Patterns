@@ -1,5 +1,11 @@
 package model;
 
+import products.Golden;
+import products.Pedigree;
+import products.RacaoDeAnimal;
+import products.RacaoDeCachorro;
+import products.RacaoDeGato;
+
 public class ModelFacade {
 	
 	@SuppressWarnings("unused")
@@ -62,6 +68,17 @@ public class ModelFacade {
 				";\nPreço: " + servico.getPreco() +
 				";\nTempo: " + servico.getTemp() 
 		);
+		
+		/* Bridge use */ 
+		System.out.println("---------------");
+		RacaoDeAnimal racao1 = new RacaoDeCachorro(new Pedigree());
+		racao1.mostrarRacao();
+		
+		RacaoDeAnimal racao2 = new RacaoDeGato(new Golden());
+		racao2.mostrarRacao();
+		
+		RacaoDeAnimal racao3 = new RacaoDeCachorro(new Golden());
+		racao3.mostrarRacao();
 		
 	}
 	
