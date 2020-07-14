@@ -1,8 +1,12 @@
 # Structural Design Patterns
-Projeto semestral em Linguagem de ProgramaÁ„o II
+Projeto semestral em Linguagem de Programa√ß√£o II
 
-## Uso dos padrıes de projetos em uma plataforma PetShop
+## Uso dos padr√µes de projetos em uma plataforma PetShop
 
-Padrıes de projetos n„o s„o linhas de algoritmos j· prontas, mas sim um conceito geral para resolver problemas conhecidos em projetos Orientado ‡ Objetos.
+Padr√µes de projetos n√£o s√£o linhas de algoritmos j√° prontas, mas sim um conceito geral para resolver problemas conhecidos em projetos Orientado √† Objetos.
 
-Aqui criamos um projeto simulando um PetShot com alguns padrıes de projeto, mostrando como Design Patterns podem ajudar em flexibilidade, reutilizaÁ„o de cÛdigo e montar classes e objetos eficientes e sem poluiÁ„o de cÛdigo.
+Aqui criamos um projeto simulando um PetShot com alguns padr√µes de projeto, mostrando como Design Patterns podem ajudar em flexibilidade, reutiliza√ß√£o de c√≥digo e montar classes e objetos eficientes e sem polui√ß√£o de c√≥digo.
+
+## Apresenta√ß√£o do conte√∫do no reposit√≥rio
+
+https://fatecspgov-my.sharepoint.com/:p:/g/personal/nicolas_fujisawa_fatec_sp_gov_br/EadSzEybcBNClGURkwVFuwYB3b2lv1jQefOpGx2j5G9BJw?e=eX1DLV
